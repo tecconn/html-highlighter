@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Highlight Group Settings</title>
+		<link rel="stylesheet" href="css/app/popup.css"/>
+		<script src="js/jquery/jquery-3.2.1.min.js"></script>
+		<script src="js/app/exception/not-implemented-error.js"></script>
+		<script src="js/app/domain/highlight-group.js"></script>
+		<script src="js/app/domain/highlight.js"></script>
+		<script src="js/app/repository/chrome-data-store.js"></script>
+		<script src="js/app/repository/highlight-group-repository.js"></script>
+		<script src="js/app/repository/highlight-repository.js"></script>
+		<script src="js/app/repository/i-data-store.js"></script>
+		<script src="js/app/repository/i-repository.js"></script>
+		<script src="js/app/popup.js"></script>
+	</head>
+	<body>
+		<table>
+			<thead>
+				<tr>
+					<th>Title</th>
+					<th>Color</th>
+					<th>BG Color</th>
+				</tr>
+			</thead>
+			<tbody id="highlight-groups">
+			
+			</tbody>
+			<tfoot>
+				<tr>
+					<td>
+						<input name="title-input" title="Title">
+					</td>
+					<td>
+						<input type="color" name="color-input" title="Color" value="#FFF">
+					</td>
+					<td>
+						<input type="color" name="bg-color-input" title="Background Color" value="#000">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3">
+						<input id="pattern-input" name="pattern-input" title="Pattern" placeholder="Pattern">
+					</td>
+				</tr>
+			</tfoot>
+		</table>
+		<div id="add-button-container">
+			<button id="add-button" title="Add">Add</button>
+		</div>
+	</body>
+</html>

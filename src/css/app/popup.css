@@ -1,0 +1,98 @@
+body {
+    width: 325px;
+    margin: 0;
+    padding: 0.25em;
+}
+
+button,
+.button {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: none;
+    line-height: 24px;
+    padding: 0.5em;
+    width: 100%;
+    cursor: pointer;
+    text-align: left;
+    display: inline-block;
+    -webkit-transition: background-color 0.25s ease;
+    -moz-transition: background-color 0.25s ease;
+    -ms-transition: background-color 0.25s ease;
+    -o-transition: background-color 0.25s ease;
+    transition: background-color 0.25s ease;
+    background-color: #a9a9a926;
+}
+
+button:hover,
+button:active,
+button:focus,
+.button:hover,
+.button:active,
+.button:focus {
+    background-color: #23232326;
+}
+
+input[name=title-input] {
+    width: 96%;
+}
+
+input[type=color] {
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    width: 100%;
+}
+
+input#pattern-input {
+    width: 98%;
+}
+
+table {
+    width: 100%;
+}
+
+div.wrapper {
+    display: -webkit-flex;
+    display: flex;
+}
+
+.check {
+    height: 24px;
+    width: 3em;
+    padding: 0.5em;
+    margin-right: 1em;
+    background: url("../../img/app/check-24.png") no-repeat 1em;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.x {
+    height: 24px;
+    width: 3em;
+    padding: 0.5em;
+    margin-right: 1em;
+    background: url("../../img/app/x-24.png") no-repeat 1em;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.click {
+    cursor: pointer;
+}
+
+.click:hover {
+    background-color: #dedede;
+    border-radius: 2px;
+}
+
+button#add-button {
+    width: auto;
+    margin: 5px;
+}
+
+div#add-button-container {
+    width: 100%;
+    text-align: right;
+}
