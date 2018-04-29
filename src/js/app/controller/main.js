@@ -14,6 +14,10 @@ $(function () {
 		highlightGroupRepository.read("1", function(result) {
 			if (result) {
 				highlightGroup = result;
+				if (!urlMatches(window.location.href, highlightGroup.url))
+					return;
+				jWindow.on("click", highlightMatches);
+				jWindow.on("load", highlightMatches);
 				highlightRepository.read(highlightGroup.highlightIds, function(result) {
 					if (result)
 						highlights = result;
@@ -36,9 +40,12 @@ $(function () {
 		});
 	}
 
-	initializeData();
+	function urlMatches(url, pattern) {
+		var regex = new RegExp(pattern, "g");
+		console.debug("Url matches pattern");
+		return regex.test(url);
+	}
 
-	jWindow.on("click", highlightMatches);
-	jWindow.on("load", highlightMatches);
+	initializeData();
 
 });

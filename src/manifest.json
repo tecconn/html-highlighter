@@ -4,15 +4,15 @@
 	"manifest_version": 2,
 	"version": "0.0.1",
 	"icons": {
-		"128": "img/app/tag-icon-blue-128.png",
-		"48": "img/app/tag-icon-blue-48.png",
-		"16": "img/app/tag-icon-blue-16.png"
+		"128": "img/app/highlighter-128.png",
+		"48": "img/app/highlighter-48.png",
+		"16": "img/app/highlighter-16.png"
 	},
 	"browser_action": {
 		"default_icon": {
-			"128": "img/app/tag-icon-blue-128.png",
-			"48": "img/app/tag-icon-blue-48.png",
-			"16": "img/app/tag-icon-blue-16.png"
+			"128": "img/app/highlighter-128.png",
+			"48": "img/app/highlighter-48.png",
+			"16": "img/app/highlighter-16.png"
 		},
 		"default_popup": "popup.html"
 	},
