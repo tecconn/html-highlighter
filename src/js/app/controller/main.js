@@ -17,7 +17,6 @@ $(function () {
 				if (!urlMatches(window.location.href, highlightGroup.url))
 					return;
 				jWindow.on("click", highlightMatches);
-				jWindow.on("load", highlightMatches);
 				highlightRepository.read(highlightGroup.highlightIds, function(result) {
 					if (result)
 						highlights = result;
@@ -42,8 +41,9 @@ $(function () {
 
 	function urlMatches(url, pattern) {
 		var regex = new RegExp(pattern, "g");
-		console.debug("Url matches pattern");
-		return regex.test(url);
+		var urlMatchesPattern = regex.test(url);
+		console.debug("Url pattern match", urlMatchesPattern);
+		return urlMatchesPattern;
 	}
 
 	initializeData();
