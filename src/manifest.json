@@ -18,8 +18,7 @@
 	},
 	"permissions": [
 		"storage",
-		"http://*/*",
-		"https://*/*"
+		"activeTab"
 	],
 	"content_scripts": [
 		{
@@ -32,7 +31,16 @@
 			],
 			"js": [
 				"js/jquery/jquery-3.2.1.min.js",
-				"js/app/main.js"
+				"js/app/exception/not-implemented-error.js",
+				"js/app/utility/html-highlight-utility.js",
+				"js/app/domain/highlight-group.js",
+				"js/app/domain/highlight.js",
+				"js/app/repository/i-data-store.js",
+				"js/app/repository/repository.js",
+				"js/app/repository/chrome-data-store.js",
+				"js/app/repository/highlight-group-repository.js",
+				"js/app/repository/highlight-repository.js",
+				"js/app/controller/main.js"
 			]
 		}
 	]

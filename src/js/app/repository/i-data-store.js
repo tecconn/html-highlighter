@@ -13,3 +13,15 @@ IDataStore.prototype.save = function(obj, onChangeCallback) {
 IDataStore.prototype.delete = function(id, onDeleteCallback) {
     throw new NotImplementedError();
 };
+
+
+function IListenerDataStore() {
+	IDataStore.apply(this, arguments);
+}
+
+IListenerDataStore.prototype.addOnChangeListener = function(id, callback) {
+	throw new NotImplementedError();
+};
+
+IListenerDataStore.prototype = Object.create(IDataStore.prototype);
+IListenerDataStore.constructor = IListenerDataStore;

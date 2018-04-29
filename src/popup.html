@@ -8,45 +8,46 @@
 		<script src="js/app/exception/not-implemented-error.js"></script>
 		<script src="js/app/domain/highlight-group.js"></script>
 		<script src="js/app/domain/highlight.js"></script>
+		<script src="js/app/repository/i-data-store.js"></script>
+		<script src="js/app/repository/repository.js"></script>
 		<script src="js/app/repository/chrome-data-store.js"></script>
 		<script src="js/app/repository/highlight-group-repository.js"></script>
 		<script src="js/app/repository/highlight-repository.js"></script>
-		<script src="js/app/repository/i-data-store.js"></script>
-		<script src="js/app/repository/i-repository.js"></script>
-		<script src="js/app/popup.js"></script>
+		<script src="js/app/controller/popup.js"></script>
 	</head>
 	<body>
 		<table>
 			<thead>
 				<tr>
-					<th>Title</th>
+					<th>Pattern</th>
 					<th>Color</th>
 					<th>BG Color</th>
 				</tr>
 			</thead>
-			<tbody id="highlight-groups">
+			<tbody id="highlights">
 			
 			</tbody>
 			<tfoot>
 				<tr>
 					<td>
-						<input name="title-input" title="Title">
+						<input id="pattern-input" name="pattern-input" title="Pattern" placeholder="Pattern">
 					</td>
 					<td>
-						<input type="color" name="color-input" title="Color" value="#FFF">
+						<input type="color" name="color-input" title="Color" value="#000000">
 					</td>
 					<td>
-						<input type="color" name="bg-color-input" title="Background Color" value="#000">
+						<input type="color" name="background-color-input" title="Background Color" value="#FFFFFF">
 					</td>
 				</tr>
 				<tr>
-					<td colspan="3">
-						<input id="pattern-input" name="pattern-input" title="Pattern" placeholder="Pattern">
+					<td colspan="4">
+						<input name="title-input" title="Title">
 					</td>
 				</tr>
 			</tfoot>
 		</table>
 		<div id="add-button-container">
+			<button id="clear-button" title="Clear">Clear</button>
 			<button id="add-button" title="Add">Add</button>
 		</div>
 	</body>

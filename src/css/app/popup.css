@@ -4,6 +4,8 @@ body {
     padding: 0.25em;
 }
 
+button:focus,
+.button:focus,
 button,
 .button {
     -webkit-border-radius: 5px;
@@ -16,6 +18,7 @@ button,
     cursor: pointer;
     text-align: left;
     display: inline-block;
+    outline: 0;
     -webkit-transition: background-color 0.25s ease;
     -moz-transition: background-color 0.25s ease;
     -ms-transition: background-color 0.25s ease;
@@ -26,18 +29,17 @@ button,
 
 button:hover,
 button:active,
-button:focus,
 .button:hover,
-.button:active,
-.button:focus {
+.button:active {
     background-color: #23232326;
 }
 
 input[name=title-input] {
-    width: 96%;
+    width: 98%;
 }
 
 input[type=color] {
+    cursor: pointer;
     border: none;
     margin: 0;
     padding: 0;
@@ -87,6 +89,11 @@ div.wrapper {
     border-radius: 2px;
 }
 
+button#clear-button {
+    float: left;
+}
+
+button#clear-button,
 button#add-button {
     width: auto;
     margin: 5px;
